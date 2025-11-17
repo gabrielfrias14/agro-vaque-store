@@ -59,7 +59,7 @@ export default function LoginPage() {
       <Card className="w-full max-w-md shadow-lg">
         <CardHeader>
           <CardTitle className="React.FormEventtext-2xl">cadastro</CardTitle>
-          <CardDescription>Faça login na sua conta para continuar.</CardDescription>
+          <CardDescription>Faça cadastro na sua conta para continuar.</CardDescription>
         </CardHeader>
 
         <CardContent>
