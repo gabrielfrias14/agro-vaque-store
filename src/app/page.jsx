@@ -23,6 +23,15 @@ export default function PageAgroVaqueStore() {
     "/imgs/img6.jpg",
   ];
 
+  const imagensMaisVendidas = [
+    "/imgs/img1.png",
+    "/imgs/img2.jpg",
+    "/imgs/img3.jpg",
+    "/imgs/img4.jpg",
+    "/imgs/img5.jpg",
+    "/imgs/img6.jpg",
+  ];
+
   const categorias = [
     { nome: "Botas", img: "/imgs/img1.jpg" },
     { nome: "Chapéus", img: "/imgs/img2.jpg" },
@@ -102,7 +111,43 @@ export default function PageAgroVaqueStore() {
             );
           })}
         </div>
+      
+       {/* MAIS VENDIDOS */}
+      <div className="mt-20">
+        <h1 className="text-3xl font-bold mb-6" style={{ color: "#033D6F" }}>
+          Produtos Mais Vendidos
+        </h1>
+
+        <Carousel className="w-full">
+          <CarouselContent className="flex">
+            {imagensMaisVendidas.map((src, index) => (
+              <CarouselItem
+                key={index}
+                className="md:basis-1/3 lg:basis-1/4 xl:basis-1/5 p-4"
+              >
+                <Card className="bg-[#F5F5F5] rounded-xl shadow-sm">
+                  <CardContent className="relative w-full h-52 flex items-center justify-center p-4">
+                    <Image
+                      src={src}
+                      alt={`Produto ${index + 1}`}
+                      width={200}
+                      height={200}
+                      className="object-contain"
+                    />
+                  </CardContent>
+                </Card>
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+
+          <CarouselPrevious className="left-0 bg-white shadow-md text-black hover:bg-gray-100" />
+          <CarouselNext className="right-0 bg-white shadow-md text-black hover:bg-gray-100" />
+        </Carousel>
       </div>
-  </div>
+      
+      </div>
+      </div>
+
+  
   );
 }
