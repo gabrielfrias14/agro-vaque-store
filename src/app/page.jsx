@@ -86,7 +86,7 @@ export default function PageAgroVaqueStore() {
         <span className="text-sm font-medium text-[#033D6F]">Categorias</span>
         <h2 className="text-2xl font-bold mt-1 mb-6">Navegar por categorias</h2>
 
-        <div className="flex gap-6 items-center flex-wrap">
+        <div className="flex gap-6 items-center">
           {categorias.map((cat, index) => {
             const ativo = selecionado === index;
 
