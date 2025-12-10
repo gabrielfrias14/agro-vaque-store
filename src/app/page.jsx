@@ -16,38 +16,38 @@ import {
 export default function PageAgroVaqueStore() {
   const imagens = [
     "/imgs/bota.png",
-    "/imgs/img2.jpg",
-    "/imgs/img3.jpg",
-    "/imgs/img4.jpg",
-    "/imgs/img5.jpg",
-    "/imgs/img6.jpg",
+    "/imgs/chapeu-couro.png",
+    "/imgs/calca-couro.png",
+    "/imgs/chapeu-couro-marron.png",
+    "/imgs/forro.png",
+    "/imgs/cabresto.png",
   ];
 
   const imagensMaisVendidas = [
-    "/imgs/img1.png",
-    "/imgs/img2.jpg",
-    "/imgs/img3.jpg",
-    "/imgs/img4.jpg",
-    "/imgs/img5.jpg",
-    "/imgs/img6.jpg",
+    "/imgs/bota-preta.png",
+    "/imgs/bota-bege.png",
+    "/imgs/capacete.png",
+    "/imgs/bota-marron.png",
+    "/imgs/sela.png",
+    "/imgs/espora.png",
   ];
 
   const imagensExploreProdutos = [
-    "/imgs/img1.jpg",
-    "/imgs/img2.jpg",
-    "/imgs/img3.png",
-    "/imgs/img4.jpg",
-    "/imgs/img5.jpg",
-    "/imgs/img6.jpg",
+    "/imgs/bovino.png",
+    "/imgs/equino.png",
+    "/imgs/vaca.png",
+    "/imgs/aves.png",
+    "/imgs/crescimento.png",
+    "/imgs/dog.png",
   ];
 
   const categorias = [
-    { nome: "Botas", img: "/imgs/img1.jpg" },
-    { nome: "Chapéus", img: "/imgs/img2.jpg" },
-    { nome: "Calças", img: "/imgs/img3.jpg" },
-    { nome: "Rações", img: "/imgs/img4.jpg" },
-    { nome: "Peitorais", img: "/imgs/img5.jpg" },
-    { nome: "Medicamentos", img: "/imgs/img6.jpg" },
+    { nome: "Botas", img: "/imgs/bota-desenho.png" },
+    { nome: "Chapéus", img: "/imgs/chapeu-desenho.png" },
+    { nome: "Calças", img: "/imgs/calca-desenho.png" },
+    { nome: "Rações", img: "/imgs/racao-desenho.png" },
+    { nome: "Peitorais", img: "/imgs/peitoral-desenho.png" },
+    { nome: "Medicamentos", img: "/imgs/medicamentos-desenho.png" },
   ];
 
   const [selecionado, setSelecionado] = useState(null);
